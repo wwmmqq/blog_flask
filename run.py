@@ -23,4 +23,6 @@ def build():
     print('...done')
 
 if __name__ == '__main__':
+    #manager = Manager(app)
+    #manager.add_command("runserver",Server(host="127.0.0.1", port=5000))
     manager.run()

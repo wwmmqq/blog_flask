@@ -11,7 +11,6 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
-
 # Make URLs clean
 ARTICLE_URL = '{slug}'
 ARTICLE_SAVE_AS = '{slug}/index.html'
