@@ -1,7 +1,9 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 
-{% block body %}
-    <h2>List of articles
+{% block title %}All of my ariticles{% endblock %}
+
+{% block content %}
+	<h1><center>Myqway's blog </center></h1>
     <ul>
         {% for page in pages %}
         <li>
@@ -11,4 +13,4 @@
         <li>No post.</li>
         {% endfor %}
     </ul>
-{% endblock body %}
+{% endblock content %}

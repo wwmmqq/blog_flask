@@ -12,14 +12,15 @@ blog.secret_key = '\xda\xb8\xc8d\xe9Ml]\xa3\x86*\x12}\xc3\xad\xe2\xe0\xe0\x83K]\
 def index():
     return "Hello World!"
 
-@blog.route('/temp/<name>')
-def temp(name=None):
-	return render_template('hello.html', name=name)
-
 @blog.route('/home')
 def home():
-	return "home"
-	#1return render_template('base.html', title='home')
+	articles = (p for p in flatpages if 'date' in p.meta)
+	return render_template('article.html', pages=articles)
+
+@blog.route('/resume')
+def resume():
+	return render_template('resume.html')
+
 
 @blog.app_errorhandler(404)
 def page_not_found(error):
