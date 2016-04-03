@@ -16,24 +16,24 @@
     <script src="static/js/bootstrap.min.js"></script>
     {% block extra_scripts %}{% endblock %}
   </head>
-  <!--img src="static/images/me.jpg"-->
   <body>
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/home">Home</a>
+          </button-->
+          <a class="navbar-brand" href="/blog/home">Home</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="">Drafts</a></li>
-            <li><a href="">aboutme Entry</a></li>
-            <li><a href="/resume">resume</a></li>
+            <li><a href="/blog/scribbles">Scribbles</a></li>
+            <li><a href="https://github.com/wwmmqq">Github</a></li>
+            <li><a href="/blog/contact">Contact</a></li>
+            <li><a href="/blog/resume">Resume</a></li>
             {% block extra_header %}{% endblock %}
           </ul>
           {% block search_bar %}

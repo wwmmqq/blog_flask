@@ -8,10 +8,14 @@ import json
 
 @blog.route('/')
 def index():
-    return "Hello World!"
+    return render_template('index.html')
 
 @blog.route('/home')
 def home():
+    return render_template('index.html')
+
+@blog.route('/scribbles')
+def scribbles():
 	articles = (p for p in flatpages if 'date' in p.meta)
 	return render_template('article.html', pages=articles)
 
@@ -19,6 +23,9 @@ def home():
 def resume():
 	return render_template('resume.html')
 
+@blog.route('/contact')
+def contact():
+	return "hello contact"
 
 @blog.app_errorhandler(404)
 def page_not_found(error):
