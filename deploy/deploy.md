@@ -79,12 +79,11 @@
 # Create an Upstart Script
 
 #  1. command & ： 后台运行，你关掉终端会停止运行
-   2. nohup command & ： 后台运行，你关掉终端也会继续运行
+   2. nohup command & ： 后台运行，你关掉终端也会继续运行(nohup sudo uwsgi uwsgi.ini &)
 
    3. ps -ef | grep uwsgi
    4. sudo killall uwsgi
-
-   
+ 
 #https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-14-04
 $: sudo start myblog
 #sudo nano /etc/init/myblog.conf
