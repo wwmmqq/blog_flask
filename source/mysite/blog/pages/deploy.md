@@ -1,5 +1,6 @@
 title: Flask deploy
 date: Saturday, April 2, 2016
+time: 2016_04_02
 summary: Flask 部署相关
 tag: flask, python
 

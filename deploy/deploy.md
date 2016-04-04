@@ -72,7 +72,7 @@
 
 	    location / {
 	    	include uwsgi_params;
-	    	uwsgi_pass unix:/home/ubuntu/work/myblog/uwsgi.sock;
+	    	uwsgi_pass unix:/home/ubuntu/work/flask_dev/uwsgi.sock;
 	     }
 	}
 

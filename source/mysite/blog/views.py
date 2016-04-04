@@ -14,10 +14,18 @@ def index():
 def home():
     return render_template('index.html')
 
+#https://pythonhosted.org/Flask-FlatPages/
 @blog.route('/scribbles')
 def scribbles():
 	articles = (p for p in flatpages if 'date' in p.meta)
-	return render_template('article.html', pages=articles)
+	latest = sorted(articles, reverse=True,
+	                    key=lambda p: p.meta['time'])
+	return render_template('article.html', pages=latest)
+
+@blog.route('/scribbles/<path:path>/')
+def scribble(path):
+    page = flatpages.get_or_404(path)
+    return render_template('onepage.html', page=page)
 
 @blog.route('/resume')
 def resume():
@@ -30,13 +38,3 @@ def contact():
 @blog.app_errorhandler(404)
 def page_not_found(error):
 	return render_template('404.html'), 404
-
-@blog.route('/pagelist')
-def pagelist():
-	articles = (p for p in flatpages if 'date' in p.meta)
-	return render_template('pagelist.html', pages=articles)
-
-@blog.route('/pagelist/<path:path>/')
-def page(path):
-    page = flatpages.get_or_404(path)
-    return render_template('onepage.html', page=page)

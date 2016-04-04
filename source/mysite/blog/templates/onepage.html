@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>{{ page.title }}</h2>
+    Title: {{ page.title }} date: {{page.time}}
     {{ page.html|safe }}
 {% endblock content %}

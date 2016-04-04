@@ -1,5 +1,6 @@
 title: ohmyzsh
 date: Sunday, April 3, 2016
+time: 2016_04_03
 summary: ohmyzsh 的使用
 tag: linux
 

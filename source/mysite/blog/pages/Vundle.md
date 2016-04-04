@@ -1,5 +1,6 @@
 title: Vundle
 date: Saturday, April 3, 2016
+time: 2016_04_03
 summary: Vundle 包管理软件, 用于管理vim的插件
 tag: vim
 

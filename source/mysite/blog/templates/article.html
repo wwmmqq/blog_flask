@@ -4,20 +4,20 @@
 
 {% block content %}
     {% for page in pages %}
-    <div class="entry-overview">
-      <div class="date">{{page.date}}</div>
-      <div class="detail">
-          <div class="article-title">
-           <a href="{{ url_for("blog.page", path=page.path) }}">
-            {{ page.title }}
-          </a>
-          <div class="article-summary">
-              {{page.summary}}
-          </div>
-          </div>
+      <div class="entry-overview">
+        <div class="date">{{page.date}}</div>
+        <div class="detail">
+            <div class="article-title">
+             <a href="{{ url_for("blog.scribble", path=page.path) }}">
+              {{ page.title }}
+            </a>
+            <div class="article-summary">
+                {{page.summary}}
+            </div>
+            </div>
+        </div>
       </div>
-    </div>
     {% else %}
-    <li>No post.</li>
+      <li>No post.</li>
     {% endfor %}
 {% endblock content %}
