@@ -1,0 +1,22 @@
+{% extends "_layout.html" %}
+{% block head %}  
+{% endblock head%}
+
+{% block content_blog %}
+    {% for page in pages %}
+      <div class="entry-overview">
+        <div class="date">{{page.date}}</div>
+        <div class="detail">
+            <div class="article-title">
+               <a href="{{ url_for("blog.ascribble", path=page.path) }}">{{ page.title }}</a>
+            </div>
+            <div class="article-summary">
+              {{page.summary}}
+            </div>
+        </div>
+      </div>
+    {% else %}
+      <li>No post.</li>
+    {% endfor %}
+{% endblock content_blog %}
+

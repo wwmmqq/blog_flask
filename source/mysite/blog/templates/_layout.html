@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <meta content="Maoquan" property="og:title">
+    <title>Maoquan's Blog</title>
+    <link href="/blog/static/images/me.ico" rel="shortcut icon">
+    <link rel=stylesheet type=text/css href="/blog/static/css/main_style.css">
+    <img id="go2top" src="/blog/static/images/top_arrow.png" alt="" class="" style="display: none;">
+
+    <!--script charset="utf-8" src="/blog/static/js/jquery-1.11.0.min.js"></script-->
+    
+    {% block head %}
+    {% endblock head%}
+</head>
+  <body>
+    <header>
+      <p>life is short</p>
+    </header>
+    <div id="container">
+        <div class="block">
+        <a target="_top" class="main" href="/blog">About</a>
+        <a target="_top" class="main" href="/blog/scribbles">Scribbles</a>
+        <a target="_top" class="main" href="/blog/tags">Tags</a>
+        <a target="_blank" class="main" href="http://github.com/wwmmqq">GitHub</a>
+        <a target="_blank" class="main" href="/blog/resume">Resume</a>
+        </div>
+        <div class="content">
+          {% block content_blog %} 
+          {% endblock %}
+        </div>
+    </div>
+    <footer>
+      <small>
+        <a href="http://github.com/wwmmqq/" alt="Github">Github</a>
+        |
+        <a href="https://www.zhihu.com/people/myqway" alt="Zhihu">Zhihu</a>
+        |
+        <a href="mailto:myqway@outlook.com" alt="email">Email</a>
+        <br>
+        Built with flask
+      </small>
+    </footer>
+  </body>
+</html>

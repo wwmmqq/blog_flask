@@ -1,0 +1,6 @@
+{% extends "_layout.html" %}
+
+{% block content_blog %}
+    Title: {{ page.title }} date: {{page.time}}
+    {{ page.html|safe }}
+{% endblock content_blog %}
