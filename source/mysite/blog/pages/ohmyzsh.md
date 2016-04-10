@@ -14,11 +14,11 @@ zsh配置很复杂，但是极为强大。
 # oh my zsh 让zsh容易使用
 
 ## install 
-Ubuntu:</pr>
+###Ubuntu:
 	sudo apt-get install zsh
 	chsh -s /bin/zsh //安装完成后设置当前用户使用zsh
 	wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-Mac:</pr>
+###Mac:
 	//自动安装
 	wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 	//手动安装
@@ -47,7 +47,7 @@ Mac:</pr>
 
 
 	#autojump
-	[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+	[[-s ~/.autojump/etc/profile.d/autojump.sh]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 	#mysql
 	alias mysql=/usr/local/mysql/bin/mysql
@@ -62,7 +62,7 @@ Mac:</pr>
 	Ubuntu: get https://github.com/downloads/joelthelion/autojump/autojump_v21.1.2.tar.gz
 			./install.sh
 			把以下代码加入.zshrc
-			[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+			[[-s ~/.autojump/etc/profile.d/autojump.sh]] && . ~/.autojump/etc/profile.d/autojump.sh
 ###use
 智能跳转，安装了autojump之后，zsh 会自动记录你访问过的目录，通过 j + 目录名 可以直接进行目录跳转，而且目录名支持模糊匹配和自动补全</br>
 目录浏览和跳转：输入 d，即可列出你在这个会话里访问的目录列表，输入列表前的序号，即可直接跳转。

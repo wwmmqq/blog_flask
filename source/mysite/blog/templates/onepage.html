@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% block head %}
+	<link rel=stylesheet type=text/css href="/blog/static/pygments-css/fruity.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.3.0/styles/default.min.css">
+	<script src="//cdn.jsdelivr.net/highlight.js/9.3.0/highlight.min.js"></script>
+{% endblock head%}
 
 {% block content %}
     Title: {{ page.title }} date: {{page.time}}
