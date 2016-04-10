@@ -6,7 +6,7 @@ tags: python,flask
 
 
 ##代码高亮
-选择了highlightjs对markdown中的代码进行高亮（只是应为它简单）
+选择了 highlightjs 对 markdown 中的代码进行高亮（只是应为它简单）
 ### highlight
 
 	highlight 会自动去寻找代码中的 <pre><code>...</code></pre> 部分，并高亮其中的代码。
