@@ -2,5 +2,5 @@
 *.pyc
 *.pyo
 
-venv/
+venv_flask/
 test/
