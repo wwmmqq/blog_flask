@@ -10,4 +10,5 @@ DEFAULT_LANG = u'en'
 
 
 GITHUB = 'http://github.com/wwmmqq'
-MAIL_ADDR = 'myqway@outloo.com'
+MAIL_ADDR = 'myqway@outlook.com'
+SECRET_KEY = 'hard to guess string1201'
